@@ -2,14 +2,4 @@ steps:
   # Install dependencies
   - name: "python"
     entrypoint: make
-    args: ['install']
-
-  # Run lint
-  - name: "python"
-    entrypoint: make
-    args: ['lint']
-
-  # Run test
-  - name: "python"
-    entrypoint: make
-    args: ['test']
+    args: ['install', 'lint', 'test']
