@@ -1,15 +1,15 @@
 steps:
   # Install dependencies
-  - name: "ubuntu"
+  - name: "python"
     entrypoint: make
     args: ['install']
 
   # Run lint
-  - name: "ubuntu"
+  - name: "python"
     entrypoint: make
     args: ['lint']
 
-  # Docker Build
-  - name: "ubuntu"
+  # Run test
+  - name: "python"
     entrypoint: make
     args: ['test']
