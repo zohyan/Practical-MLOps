@@ -1,15 +1,14 @@
 steps:
   # Install dependencies
-  - name: 'Install dependencies'
-    entrypoint: make
+  - entrypoint: make
     args: ['install']
 
   # Run lint
-  - name: Lint code
+  - name: "Lint code"
     entrypoint: make
     args: ['lint']
 
   # Docker Build
-  - name: Test code
+  - name: "Test code"
     entrypoint: make
     args: ['test']
