@@ -1,6 +1,6 @@
 steps:
   # Install dependencies
-  - name: Install dependencies
+  - name: 'Install dependencies'
     entrypoint: make
     args: ['install']
 
